@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Flower<span class="dot">.</span></h1>
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- <div class="icons">
+            <a href="#" class="icon">❤️</a>
+            <a href="#" class="icon">🛒</a>
+            <a href="#" class="icon">👤</a>
+        </div> -->
+
+        <!-- Sidebar Menu -->
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" onclick="closeMenu()">&times;</button>
+            <ul>
+                <li><a href="#hero" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#products" onclick="closeMenu()">Products</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <div class="menu-toggle" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-text">
+            <h2>Fresh Flowers</h2>
+            <p class="subtext">Natural & Beautiful Flowers</p>
+            <p>Discover the beauty of handpicked, vibrant blooms that bring joy to any occasion.</p>
+            <!-- <button class="shop-btn">Explore Collection</button> -->
+        </div>
+    </section>
+
+    
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p><strong>Bring you fresh, handpicked flowers directly from farms, ensuring quality and beauty in every bouquet.</strong> </p>
+    
+        <div class="about-content">
+            <div class="container">
+            <h3>Our Story</h3>
+            <p>At Gopika Store, we believe that flowers have the power to brighten lives, celebrate love, and bring joy to every occasion. Our journey began with a simple mission—to deliver the freshest and most beautiful flowers to your doorstep with care and passion.</p>
+    
+            <h3>Our Mission</h3>
+            <p>We are dedicated to sourcing high-quality flowers from trusted farms and experienced florists. With a commitment to sustainability and freshness, we ensure that each bloom is carefully selected, arranged, and delivered with love.</p>
+    
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li>🌸 Handpicked fresh flowers straight from the farm</li>
+                <li>💐 Unique and elegant floral arrangements for all occasions</li>
+                <li>🚚 Fast and reliable delivery service</li>
+                <li>🌿 Eco-friendly packaging to support sustainability</li>
+                <li>❤️ Customer satisfaction is our top priority</li>
+            </ul>
+    
+            <h3>Join Our Floral Journey</h3>
+            <p>Whether you're celebrating a special moment, expressing gratitude, or simply brightening someone’s day, our flowers are crafted to convey emotions beautifully. Explore our collections and let nature’s beauty speak for you!</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Featured Products -->
+    <section class="products" id="products">
+        <h2>Our Bestsellers</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="images/1.jpg" alt="Flower 1">
+                <h3>Roses Bouquet</h3>
+                <p>$25.99</p>
+                <button class="shop-btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/2.jpg" alt="Flower 2">
+                <h3>Sunflowers</h3>
+                <p>$18.99</p>
+                <button class="shop-btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/3.jpg" alt="Flower 3">
+                <h3>Tulip Mix</h3>
+                <p>$30.99</p>
+                <button class="shop-btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/4.jpg" alt="Flower 4">
+                <h3>Lavender Bliss</h3>
+                <p>$28.99</p>
+                <button class="shop-btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/5.jpg" alt="Flower 5">
+                <h3>Daisy Delight</h3>
+                <p>$26.99</p>
+                <button class="shop-btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/6.jpg" alt="Flower 6">
+                <h3>Orchid Elegance</h3>
+                <p>$35.99</p>
+                <button class="shop-btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/7.jpg" alt="Flower 7">
+                <h3>Lily Bunch</h3>
+                <p>$22.99</p>
+                <button class="shop-btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/8.jpg" alt="Flower 8">
+                <h3>Peony Charm</h3>
+                <p>$29.99</p>
+                <button class="shop-btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/9.jpg" alt="Flower 9">
+                <h3>Cherry Blossom</h3>
+                <p>$32.99</p>
+                <button class="shop-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3>Write Your Message</h3>
+                <form>
+                    <div class="input-group">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Theni, Tamilnadu</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>your-email@example.com</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+    </section>
+    
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Flower Shop. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
