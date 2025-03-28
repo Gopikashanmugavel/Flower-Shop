@@ -594,3 +594,27 @@ footer p {
         display: none;
     }
 }
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+    .product-container img {
+        width: 100%; /* Ensures image takes full width of container */
+        height: auto; /* Maintains aspect ratio */
+        max-width: 180px; /* Prevents images from becoming too large */
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px; /* Smooth rounded corners */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+    }
+    .product-container img {
+        width: 90%; /* Adjusts image width for smaller screens */
+        max-width: 150px;
+    }
+}
